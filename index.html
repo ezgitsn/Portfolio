@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Ezgi Tosun</title>
+<body>
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Over mij</a></li>
+            <li><a href="#education">Werkervaring|Opleidingen</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero container">
+        <div>
+            <h1>Welkom, <span></span></h1>
+            <h1> Mijn naam is Ezgi Tosun<span></span></h1>
+        </div>
+    </div>
+
+</section>
+
+<!--* over mij*/-->
+<section id="about">
+    <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+                <img src="pasfoto.jpg" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">Over <span>mij</span></h1>
+            <h2>Software Developer</h2>
+            <p>Hallo! Mijn naam is Ezgi Tosun en ik ben 18 jaar oud. Ik ben geboren en getogen in Beverwijk. Momenteel
+                zit ik in het 3e leerjaar van de studie Software Developer aan het Nova College in Beverwijk.
+                Voetbal is een sport die ik met passie beoefen.Ik heb zelf een aantal jaar gespeeld bij RKVV DEM in
+                Beverwijk.
+                <br> <br>
+                Na interesse te hebben gekregen in het trainersvak, ben ik me hier meer in gaan verdiepen, en
+                heb ik me met veel enthousiasme aangemeld voor de voetbalcoachopleiding die werd aangeboden door de
+                KNVB. Na deze papieren te hebben behaald, heb ik ook een aantal jaren training gegeven aan de JO13 en
+                heb ik
+                ze op zaterdagen ook gecoacht. Voor de rest hou ik ervan om tijd met vrienden en familie door te
+                brengen, om met ze op vakantie te gaan en allerlei nieuwe dingen/plekken te ontdekken.</p>
+
+            <!--* talen*/-->
+            <div id="languages">
+                <h2>Talen</h2>
+                <div class="language-bar">
+                    <span class="language">Nederlands</span>
+                    <div class="bar">
+                        <div class="percentage" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+                <div class="language-bar">
+                    <span class="language">Turks</span>
+                    <div class="bar">
+                        <div class="percentage" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+                <div class="language-bar">
+                    <span class="language">Engels</span>
+                    <div class="bar">
+                        <div class="percentage" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--* werkervaring|opleidingen*/-->
+    <section id="education">
+        <div class="education container">
+            <div class="col-right">
+                <div class="info-box">
+                    <h1 class="section-title">Werk<span>ervaring</span></h1>
+
+                    <p>2022 - heden
+                        Servicebalie medewerker • Lidl • Beverwijk , Noord-Holland
+                        <br><br>
+                        Ik ben sinds juni 2022 werkzaam bij de Lidl in Beverwijk als servicebalie medewerker.
+                        Tegelijkertijd
+                        sta
+                        ik ook op de vloer bij de zelfscans. Tijdens mijn werk heb ik veel te maken met klantencontact.
+                        Klantgerichtheid en probleemoplossend vermogen zijn hierbij de twee belangrijkste aspecten.
+                    </p>
+                    <a href="CV%20Ezgi%20Tosun.pdf" download class="cta">Download CV</a>
+                    <br>
+                    <br>
+
+                    <h2 class="section-title">Opleid<span>ingen</span></h2>
+                    <div class="education-text">
+                        <p> 2018 – 2022 | Mavo , Kennemer College, Beverwijk , Noord-Holland
+                            <br><br>
+                            2022 – heden | Software Developer niveau 4, Nova College Beverwijk, Noord-Holland
+                            <br><br>
+                            2023 | VJ Basismodule JVTC KNVB
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Ik ben beschikbaar voor nieuwe uitdagingen en samenwerkingen. Neem gerust contact met me op als je
+            interesse hebt in mijn werk of als je vragen hebt. Ik sta open voor projecten op het gebied van
+            webontwikkeling, softwareontwikkeling en meer.</p>
+        <a href="mailto:ezgitos6@gmail.com">ezgitos6@gmail.com</a>
+        <a href="mailto:etosun587@student.novacollege.nl">etosun587@student.novacollege.nl</a>
+        <a href="tel:+31648382850">+31 6 48382850</a>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ezgi Tosun. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Terug naar boven knop -->
+    <a href="#hero" class="back-to-top"> Terug naar boven ⇧ </a>
+    <script>
+
+        // Selecteer de knop
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        // Voeg een scroll event listener toe
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show-back-to-top');
+            } else {
+                backToTopButton.classList.remove('show-back-to-top');
+            }
+        });
+    </script>
+
+</section>
+</body>
+</html>
